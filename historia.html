@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- HTML5 -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+  <title>Historia del Hackatón Universitario</title>
+  <style>
+    /* Estilos similares a index.html, se omiten comentarios repetidos */
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9fafc; color: #222; }
+    header { background: #111; color: #fff; padding: 1.2rem; text-align: center; }
+    nav { margin-top: .8rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    nav a { color: #0af; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    main { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+    section { margin-bottom: 2rem; padding: 1.5rem; background: #fff; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+    h2 { color: #075; margin-top: 0; }
+    .timeline { position: relative; padding-left: 2rem; border-left: 3px solid #0a7; margin-top: 1rem; }
+    .timeline::before { content: ""; position: absolute; left: -7px; top: 0; bottom: 0; width: 12px; background: #0a7; border-radius: 6px; }
+    .event { margin-bottom: 1.5rem; position: relative; }
+    .event::before { content: ""; position: absolute; left: -2.1rem; top: .4rem; width: 12px; height: 12px; background: #0a7; border-radius: 50%; border: 2px solid white; box-shadow: 0 0 0 2px #0a7; }
+    .event h3 { margin: 0 0 .25rem; font-size: 1rem; color: #075; }
+    .event time { font-size: .9rem; color: #555; display: block; margin-bottom: .3rem; }
+    img { max-width: 100%; border-radius: 8px; margin: 1rem 0; }
+    footer { background: #111; color: #fff; text-align: center; padding: 1.2rem; margin-top: 2rem; }
+    @media (max-width: 600px) { nav { flex-direction: column; gap: .5rem; } section { padding: 1rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portal de Empleo Tech</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="historia.html">Historia</a>
+      <a href="vacantes.html">Vacantes</a>
+      <a href="empresas.html">Empresas</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Introducción -->
+    <section id="introduccion">
+      <h2>Historia del Hackatón Universitario</h2>
+      <p>Los hackatones universitarios son eventos colaborativos de estudiantes para resolver desafíos en tiempo limitado.</p>
+      <img src="hackathon-students.jpg" alt="Estudiantes participando en un hackatón">
+    </section>
+
+    <!-- Línea de tiempo -->
+    <section id="timeline">
+      <h2>Línea de tiempo del hackatón universitario</h2>
+      <div class="timeline">
+        <div class="event">
+          <time datetime="1999">1999</time>
+          <h3>Primer hackatón universitario</h3>
+          <p>Se celebra en una universidad de EE. UU., reuniendo estudiantes de informática y diseño por 24 horas.</p>
+        </div>
+        <div class="event">
+          <time datetime="2005">2005</time>
+          <h3>Expansión internacional</h3>
+          <p>Los hackatones se organizan en universidades de Europa y América Latina.</p>
+        </div>
+        <div class="event">
+          <time datetime="2015">2015</time>
+          <h3>Hackatones especializados</h3>
+          <p>Se crean hackatones temáticos: educación, salud, AI y sostenibilidad.</p>
+        </div>
+        <div class="event">
+          <time datetime="2020">2020</time>
+          <h3>Eventos virtuales</h3>
+          <p>La pandemia hace que se realicen de manera online, con alcance global.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video explicativo -->
+    <section id="video">
+      <h2>Video: ¿Qué es un hackatón universitario?</h2>
+      <video width="100%" controls>
+        <source src="hackathon-intro.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Portal de Empleo Tech — Proyecto académico</p>
+  </footer>
+</body>
+</html>
