@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- Indica que es un documento HTML5 -->
+<html lang="es"> <!-- Documento en español -->
+<head>
+  <meta charset="UTF-8"> <!-- Codificación para caracteres especiales -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsive -->
+  <title>Portal de Empleo Tech - Inicio</title> <!-- Título de la pestaña -->
+  <style>
+    /* ====== ESTILOS GENERALES ====== */
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9fafc; color: #222; } /* Fuente y fondo */
+    header { background: #111; color: #fff; padding: 1.2rem; } /* Estilo de encabezado */
+    header h1 { margin: 0; } /* Elimina margen superior */
+    nav { margin-top: .8rem; display: flex; flex-wrap: wrap; gap: 1rem; } /* Menú horizontal flexible */
+    nav a { color: #0af; text-decoration: none; font-weight: bold; } /* Estilo de enlaces del nav */
+    nav a:hover { text-decoration: underline; } /* Efecto hover en enlaces */
+    main { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; } /* Contenedor principal centrado */
+    section { margin-bottom: 2rem; padding: 1.5rem; background: #fff; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); } /* Estilo de secciones */
+    h2 { color: #075; margin-top: 0; } /* Títulos de secciones */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; } /* Grid para tarjetas */
+    article { background: #f4f6f9; padding: 1rem; border-radius: 8px; } /* Tarjetas de vacantes o empresas */
+    footer { background: #111; color: #fff; text-align: center; padding: 1.2rem; margin-top: 2rem; } /* Pie de página */
+    @media (max-width: 600px) { nav { flex-direction: column; gap: .5rem; } section { padding: 1rem; } } /* Responsivo */
+  </style>
+</head>
+<body>
+  <!-- ====== CABECERA ====== -->
+  <header>
+    <h1>Portal de Empleo Tech</h1> <!-- Título principal del portal -->
+    <nav>
+      <a href="index.html">Inicio</a> <!-- Enlace a la página principal -->
+      <a href="historia.html">Historia</a> <!-- Enlace a la historia del hackatón -->
+      <a href="vacantes.html">Vacantes</a> <!-- Enlace a vacantes -->
+      <a href="empresas.html">Empresas</a> <!-- Enlace a empresas asociadas -->
+      <a href="contacto.html">Contacto</a> <!-- Enlace al formulario de contacto -->
+    </nav>
+  </header>
+
+  <!-- ====== CONTENIDO PRINCIPAL ====== -->
+  <main>
+    <!-- Sección de bienvenida -->
+    <section id="bienvenida">
+      <h2>Bienvenidos</h2> <!-- Título de la sección -->
+      <p>Portal ficticio para conectar estudiantes y profesionales con empresas IT.</p> <!-- Texto introductorio -->
+      <p>Encuentra vacantes, conoce empresas y participa en hackatones.</p> <!-- Texto adicional -->
+    </section>
+
+    <!-- Sección de vacantes destacadas -->
+    <section id="vacantes">
+      <h2>Vacantes destacadas</h2>
+      <div class="grid">
+        <article>
+          <h3>Desarrollador Frontend</h3> <!-- Nombre del puesto -->
+          <p>Empresa: TechSoft</p> <!-- Empresa -->
+          <p>Ubicación: Remoto</p> <!-- Ubicación -->
+        </article>
+        <article>
+          <h3>Data Analyst</h3>
+          <p>Empresa: DataCorp</p>
+          <p>Ubicación: Ciudad de México</p>
+        </article>
+        <article>
+          <h3>Ingeniero DevOps</h3>
+          <p>Empresa: CloudNet</p>
+          <p>Ubicación: Bogotá</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección de empresas asociadas -->
+    <section id="empresas">
+      <h2>Empresas asociadas</h2>
+      <div class="grid">
+        <article>
+          <h3>TechSoft</h3>
+          <p>Desarrollo de aplicaciones web y móviles.</p>
+        </article>
+        <article>
+          <h3>DataCorp</h3>
+          <p>Análisis de datos y soluciones Big Data.</p>
+        </article>
+        <article>
+          <h3>CloudNet</h3>
+          <p>Servicios en la nube y DevOps.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección multimedia -->
+    <section id="multimedia">
+      <h2>Conoce más</h2>
+      <p>Video introductorio sobre cómo postular a vacantes IT:</p>
+      <video width="100%" controls>
+        <source src="video-demo.mp4" type="video/mp4"> <!-- Archivo de video -->
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </section>
+  </main>
+
+  <!-- ====== PIE DE PÁGINA ====== -->
+  <footer>
+    <p>© 2025 Portal de Empleo Tech — Proyecto académico</p>
+  </footer>
+</body>
+</html>
