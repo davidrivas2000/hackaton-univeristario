@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacantes - Portal de Empleo Tech</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9fafc; color: #222; }
+    header { background: #111; color: #fff; padding: 1.2rem; text-align: center; }
+    nav { margin-top: .8rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    nav a { color: #0af; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    main { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+    section { margin-bottom: 2rem; padding: 1.5rem; background: #fff; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+    h2 { color: #075; margin-top: 0; }
+    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: .6rem; text-align: left; }
+    th { background-color: #0a7; color: #fff; }
+    tfoot td { font-weight: bold; background-color: #e1f5ea; }
+    form label { font-weight: bold; }
+    form input, form textarea, form button { width: 100%; padding: .6rem; margin: .5rem 0 1rem; border-radius: 6px; border: 1px solid #ccc; box-sizing: border-box; }
+    form button { background: #0a7; color: #fff; border: none; cursor: pointer; font-weight: bold; }
+    form button:hover { background: #075; }
+    footer { background: #111; color: #fff; text-align: center; padding: 1.2rem; margin-top: 2rem; }
+    @media (max-width: 600px) { nav { flex-direction: column; gap: .5rem; } table, th, td { font-size: .9rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portal de Empleo Tech</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="historia.html">Historia</a>
+      <a href="vacantes.html">Vacantes</a>
+      <a href="empresas.html">Empresas</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Tabla de vacantes -->
+    <section id="tabla-vacantes">
+      <h2>Vacantes disponibles</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Puesto</th> <!-- Encabezado de columna -->
+            <th>Empresa</th>
+            <th>Ubicación</th>
+            <th>Modalidad</th>
+            <th>Fecha de Publicación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Desarrollador Frontend</td>
+            <td>TechSoft</td>
+            <td>Remoto</td>
+            <td>Tiempo completo</td>
+            <td>01/09/2025</td>
+          </tr>
+          <tr>
+            <td>Data Analyst</td>
+            <td>DataCorp</td>
+            <td>Ciudad de México</td>
+            <td>Medio tiempo</td>
+            <td>03/09/2025</td>
+          </tr>
+          <tr>
+            <td>Ingeniero DevOps</td>
+            <td>CloudNet</td>
+            <td>Bogotá</td>
+            <td>Tiempo completo</td>
+            <td>05/09/2025</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5">Actualizado semanalmente</td> <!-- Pie de tabla -->
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto-form">
+      <h2>Formulario de Contacto</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" pattern="[A-Za-z\s]+" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Portal de Empleo Tech — Proyecto académico</p>
+  </footer>
+</body>
+</html>
